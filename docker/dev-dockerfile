@@ -1,0 +1,11 @@
+FROM jekyll/jekyll:latest
+
+USER root
+RUN apk add --update supervisor && rm  -rf /tmp/* /var/cache/apk/*
+
+RUN npm install -g gulp
+RUN npm link gulp
+
+ADD /docker/files/dev/supervisord.conf /etc/
+ENTRYPOINT ["supervisord", "--nodaemon", "--configuration", "/etc/supervisord.conf"]
+USER jekyll
