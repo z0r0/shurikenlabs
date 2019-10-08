@@ -7,5 +7,5 @@ RUN npm install -g gulp
 RUN npm link gulp
 
 ADD /docker/files/dev/supervisord.conf /etc/
-ENTRYPOINT ["supervisord", "--nodaemon", "--configuration", "/etc/supervisord.conf"]
 USER jekyll
+ENTRYPOINT ["supervisord", "--nodaemon", "--configuration", "/etc/supervisord.conf"]
