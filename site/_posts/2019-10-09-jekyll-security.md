@@ -98,9 +98,6 @@ If you look at the different `dev` and `prod` dockerfiles, you'll notice huge di
 Here's that dockerfile for reference.
 
 ```
-And my dockerfile that's referenced...
-
-```
 # docker/dev-dockerfile
 
 FROM jekyll/jekyll:latest
