@@ -20,7 +20,7 @@ services:
     ports:
       - 4000:4000    
     environment:
-      - ENV=production
+      - JEKYLL_ENV=production
   prod:
     build:
       context: .
