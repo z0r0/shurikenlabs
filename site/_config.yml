@@ -25,6 +25,7 @@ subscribers: False # you need to connect an external service for this to work,
 # if 'True' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
 twitter: secureish # replace by your username
+github: z0r0
 #facebook: ghost # replace by your username
 
 # Disqus

@@ -10,8 +10,8 @@ fables:
   name: fables
   description: A series of short stories that make you think.
   cover: assets/images/fables.jpg
-cars:
-  name: cars
+containers:
+  name: containers
   description: False
   cover: False
 getting-started:
